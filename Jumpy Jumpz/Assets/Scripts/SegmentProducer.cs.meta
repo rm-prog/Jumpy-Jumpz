@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e56567c01b5601a498ae5da7221c846c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - wallObstacle: {fileID: 6203612810336808628, guid: 78ace6459a5da734680aa892c7f3b6e8,
+      type: 3}
+  - movingWallObstacle: {fileID: 6123054197527544532, guid: b39e163d6fee9c444a0f62d15acf4bcc,
+      type: 3}
+  - segment: {fileID: 5489709678860501375, guid: 0db9234e4aaa8f74489bae412d37b876,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
