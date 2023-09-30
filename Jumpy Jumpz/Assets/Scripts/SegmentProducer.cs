@@ -11,13 +11,13 @@ public class SegmentProducer : MonoBehaviour
 
     private Vector3[] possiblePositions = new Vector3[]
     {
-        new Vector3(10.9f, 5.98f, 2.43f), new Vector3(10.9f, 5.98f, 0f), new Vector3(10.9f, 5.98f, -2.43f),
-        new Vector3(10.9f, 3.78f, -2.43f), new Vector3(10.9f, 3.78f, 0f), new Vector3(10.9f, 3.78f, 2.43f),
-        new Vector3(10.9f, 1.51f, -2.43f), new Vector3(10.9f, 1.51f, 0f), new Vector3(10.9f, 1.51f, 2.43f)
+        new Vector3(15.9f, 5.98f, 2.43f), new Vector3(15.9f, 5.98f, 0f), new Vector3(15.9f, 5.98f, -2.43f),
+        new Vector3(15.9f, 3.78f, -2.43f), new Vector3(15.9f, 3.78f, 0f), new Vector3(15.9f, 3.78f, 2.43f),
+        new Vector3(15.9f, 1.51f, -2.43f), new Vector3(15.9f, 1.51f, 0f), new Vector3(15.9f, 1.51f, 2.43f)
     };
     private Vector3[] movingWallPossiblePositions = new Vector3[]
     {
-        new Vector3(10.9f, 2.46f, 0f), new Vector3(10.9f, 4.76f, 0f)
+        new Vector3(15.9f, 2.46f, 0f), new Vector3(15.9f, 4.76f, 0f)
     };
     private float xOffset = 0f;
 

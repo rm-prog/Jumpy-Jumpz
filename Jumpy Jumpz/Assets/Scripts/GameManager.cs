@@ -6,12 +6,16 @@ public class GameManager : MonoBehaviour
 
     public GameObject CompleteLevelPanel;
     public GameObject GamePanel;
+    public GameObject GameOverPanel;
 
     public GameObject Player;
 
+    public bool IsEndlessRunner;
+
     public void EndGame()
     {
-        Restart();
+        if (!IsEndlessRunner) Restart();
+        else GameOverPanel.SetActive(true);
     }
 
     public void Restart()
