@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontalInputMultiply = 20.0f;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();

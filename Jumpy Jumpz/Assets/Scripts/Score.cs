@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
@@ -9,6 +8,7 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        GetComponent<TextMeshPro>().text = PlayerTransfrom.position.x.ToString("0");
+        GetComponent<TextMeshProUGUI>().text = PlayerTransfrom.position.x.ToString("0");
     }
 }
+

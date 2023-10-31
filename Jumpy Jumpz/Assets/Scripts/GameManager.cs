@@ -15,7 +15,11 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         if (!IsEndlessRunner) Restart();
-        else GameOverPanel.SetActive(true);
+        else
+        {
+            GameOverPanel.SetActive(true);
+            GamePanel.SetActive(true);
+        }
     }
 
     public void Restart()
