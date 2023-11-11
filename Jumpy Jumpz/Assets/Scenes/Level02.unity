@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.992516, g: 0.5260191, b: 0.34484392, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24058,6 +24058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GamePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292902386397566121, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292902386992935636, guid: da96fdb235ffc6d44baa8c20eb456c41,
         type: 3}
