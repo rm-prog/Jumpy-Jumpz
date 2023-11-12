@@ -539,9 +539,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 121716876585970297, guid: 2d17352a55ac20048a0ed25f52aa661d,
         type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 308944097}
+    - target: {fileID: 121716876585970297, guid: 2d17352a55ac20048a0ed25f52aa661d,
+        type: 3}
       propertyPath: GamePanel
       value: 
       objectReference: {fileID: 105265897}
+    - target: {fileID: 121716876585970297, guid: 2d17352a55ac20048a0ed25f52aa661d,
+        type: 3}
+      propertyPath: gamePanel
+      value: 
+      objectReference: {fileID: 105265897}
+    - target: {fileID: 121716876585970297, guid: 2d17352a55ac20048a0ed25f52aa661d,
+        type: 3}
+      propertyPath: startPanel
+      value: 
+      objectReference: {fileID: 1289034839}
     - target: {fileID: 121716876585970300, guid: 2d17352a55ac20048a0ed25f52aa661d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -659,6 +674,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d17352a55ac20048a0ed25f52aa661d, type: 3}
+--- !u!1 &1289034839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 121716876585970301, guid: 2d17352a55ac20048a0ed25f52aa661d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1289034838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1299225502
 GameObject:
   m_ObjectHideFlags: 0

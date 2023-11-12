@@ -5,9 +5,9 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
 
-    private float linearSpeed = 12f;
+    public float linearSpeed = 12f;
 
-    private float verticalJumpSpeed = 5f;
+    public float verticalJumpSpeed = 5f;
 
     private float horizontalInputMultiply = 20.0f;
 
