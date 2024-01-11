@@ -7,13 +7,13 @@ public class SegmentProducer : MonoBehaviour
     public GameObject movingWallObstacle;
     public GameObject segment;
 
-    private float segmentXPosition = 0f;
+    private float segmentXPosition = 15f;
 
     private Vector3[] possiblePositions = new Vector3[]
     {
-        new Vector3(15.9f, 5.98f, 2.43f), new Vector3(15.9f, 5.98f, 0f), new Vector3(15.9f, 5.98f, -2.43f),
-        new Vector3(15.9f, 3.78f, -2.43f), new Vector3(15.9f, 3.78f, 0f), new Vector3(15.9f, 3.78f, 2.43f),
-        new Vector3(15.9f, 1.51f, -2.43f), new Vector3(15.9f, 1.51f, 0f), new Vector3(15.9f, 1.51f, 2.43f)
+        new Vector3(22f, 5.98f, 2.43f), new Vector3(22f, 5.98f, 0f), new Vector3(22f, 5.98f, -2.43f),
+        new Vector3(22f, 3.78f, -2.43f), new Vector3(22f, 3.78f, 0f), new Vector3(22f, 3.78f, 2.43f),
+        new Vector3(22f, 1.51f, -2.43f), new Vector3(22f, 1.51f, 0f), new Vector3(22f, 1.51f, 2.43f)
     };
     private Vector3[] movingWallPossiblePositions = new Vector3[]
     {
