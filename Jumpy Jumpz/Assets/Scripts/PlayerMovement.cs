@@ -48,6 +48,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector3(linearSpeed, rb.velocity.y, Input.acceleration.x * -horizontalInputMultiply);
         }
+        else
+        {
+            rb.velocity = new Vector3(linearSpeed, rb.velocity.y, rb.velocity.z);
+        }
 
     }
 
