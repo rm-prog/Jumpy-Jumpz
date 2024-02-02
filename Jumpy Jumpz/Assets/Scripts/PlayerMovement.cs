@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float verticalJumpSpeed = 7f; // 5f
 
-    private float horizontalInputMultiply = 20.0f;
+    private float horizontalInputMultiply = 24.0f;
 
     void Start()
     {
@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         //}
 
         linearSpeed += 0.001f;
-
     }
 
     public void Jump()
@@ -45,7 +44,10 @@ public class PlayerMovement : MonoBehaviour
         // Player should move forward in constant speed and move horizontally, when A or D is clicked
         // Player should jump if w button is clicked
         // rb.velocity = new Vector3(linearSpeed, rb.velocity.y, -horizontalInput * horizontalInputMultiply);
-        rb.velocity = new Vector3(linearSpeed, rb.velocity.y, Input.acceleration.x * -horizontalInputMultiply);
+        if (Input.acceleration.x > 0.005 || Input.acceleration.x < -0.005)
+        {
+            rb.velocity = new Vector3(linearSpeed, rb.velocity.y, Input.acceleration.x * -horizontalInputMultiply);
+        }
 
     }
 
