@@ -7,9 +7,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float linearSpeed = 30f; // 12f
 
-    public float verticalJumpSpeed = 7f; // 5f
+    public readonly float verticalJumpSpeed = 7f; // 5f
 
-    private float horizontalInputMultiply = 24.0f;
+    private readonly float horizontalInputMultiply = 24.0f;
 
     void Start()
     {
