@@ -9,16 +9,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b24c83e6ebbc342468a4b03e1d4a789b
   - enabled: 1
+    path: Assets/Scenes/LevelsMenu.unity
+    guid: 3574a0bab05051c4a9e6cbd8a8abdfbe
+  - enabled: 1
     path: Assets/Scenes/EndlessRunner.unity
     guid: f4baf9e756334914f82b44ad73200208
   - enabled: 1
-    path: Assets/Scenes/TestLevel.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 3b286d5bc253db94a9bedda71f6efd1d
   - enabled: 1
-    path: Assets/Scenes/Level01.unity
+    path: Assets/Scenes/Level 2.unity
     guid: 9d28852c165189c47861b3f8f4bcdc3d
   - enabled: 1
-    path: Assets/Scenes/Level02.unity
+    path: Assets/Scenes/Level 3.unity
     guid: 443cbf50da4511e45b20a036e1a16532
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 10532bfbf2d2e0043b1e505f58dfc958,
