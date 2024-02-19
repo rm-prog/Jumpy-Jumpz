@@ -23,22 +23,10 @@ public class ShadowFollow : MonoBehaviour
 
         transform.position = new Vector3(player.position.x + offsetX, positionY, player.position.z);
 
-        float scale = 1.0f;
+        float scaleMultiplier = 0.5f;
 
-        if (player.position.y < 1.0f) 
-        {
-            scale = 1.5f + (1 - player.position.y)*3;
-        } 
-        else if (player.position.y < 3.0f)
-        {
-            scale = 1 + (3 - player.position.y)*0.75f;
-        } 
+        transform.localScale = new Vector3(scaleMultiplier * player.position.y, transform.localScale.y, scaleMultiplier * player.position.y);
 
-        transform.localScale = new Vector3(
-                                        scale, 
-                                        transform.localScale.y, 
-                                        scale
-                                           );
     }
 
 }
