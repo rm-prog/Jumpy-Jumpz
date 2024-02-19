@@ -3,7 +3,12 @@ using UnityEngine;
 public class SegmentProducer : MonoBehaviour
 {
 
-    public GameObject wallObstacle;
+    public GameObject wallObstacle1;
+    public GameObject wallObstacle2;
+    public GameObject wallObstacle3;
+    private GameObject[] wallObstacles;
+    private int wallObstacleIndex = 0;
+
     public GameObject movingWallObstacle;
     public GameObject segment;
 
@@ -11,13 +16,13 @@ public class SegmentProducer : MonoBehaviour
 
     private Vector3[] possiblePositions = new Vector3[]
     {
-        new Vector3(22f, 5.98f, 2.43f), new Vector3(22f, 5.98f, 0f), new Vector3(22f, 5.98f, -2.43f),
-        new Vector3(22f, 3.78f, -2.43f), new Vector3(22f, 3.78f, 0f), new Vector3(22f, 3.78f, 2.43f),
-        new Vector3(22f, 1.51f, -2.43f), new Vector3(22f, 1.51f, 0f), new Vector3(22f, 1.51f, 2.43f)
+        new Vector3(32f, 5.98f, 2.43f), new Vector3(32f, 5.98f, 0f), new Vector3(32f, 5.98f, -2.43f),
+        new Vector3(32f, 3.78f, -2.43f), new Vector3(32f, 3.78f, 0f), new Vector3(32f, 3.78f, 2.43f),
+        new Vector3(32f, 1.51f, -2.43f), new Vector3(32f, 1.51f, 0f), new Vector3(32f, 1.51f, 2.43f)
     };
     private Vector3[] movingWallPossiblePositions = new Vector3[]
     {
-        new Vector3(15.9f, 2.46f, 0f), new Vector3(15.9f, 4.76f, 0f)
+        new Vector3(32f, 2.46f, 0f), new Vector3(32f, 4.76f, 0f)
     };
     private float xOffset = 0f;
 
@@ -27,16 +32,17 @@ public class SegmentProducer : MonoBehaviour
     private int minObstacles = 2;
     private int maxObstacles = 2;
 
-    private int numberOfObstacleBlocks = 12;
+    private int numberOfObstacleBlocks = 8;
 
-    private float distanceObstacles = 14.0f;
+    private float distanceObstacles = 20.0f;
+    private float segmentLength = 173.0f;
 
     private int movingWallProbability = 20;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        wallObstacles = new GameObject[] { wallObstacle1, wallObstacle2, wallObstacle3 };
         ProduceSegment();
         ProduceSegment();
     }
@@ -72,7 +78,7 @@ public class SegmentProducer : MonoBehaviour
                 {
                     if (movingWallPosition == 0)
                     {
-                        Instantiate(wallObstacle,
+                        Instantiate(wallObstacles[wallObstacleIndex],
                                     new Vector3(possiblePositions[miniPermutation[j]].x + xOffset,
                                                 possiblePositions[miniPermutation[j]].y,
                                                 possiblePositions[miniPermutation[j]].z),
@@ -81,7 +87,7 @@ public class SegmentProducer : MonoBehaviour
                     }
                     else
                     {
-                        Instantiate(wallObstacle,
+                        Instantiate(wallObstacles[wallObstacleIndex],
                                     new Vector3(possiblePositions[miniPermutation[j] + 6].x + xOffset,
                                                 possiblePositions[miniPermutation[j] + 6].y,
                                                 possiblePositions[miniPermutation[j] + 6].z),
@@ -99,7 +105,7 @@ public class SegmentProducer : MonoBehaviour
 
                 for (int j = 0; j < numberOfObstacles; j++)
                 {
-                    Instantiate(wallObstacle,
+                    Instantiate(wallObstacles[wallObstacleIndex],
                                 new Vector3(possiblePositions[permutationOfPositions[j]].x + xOffset,
                                             possiblePositions[permutationOfPositions[j]].y,
                                             possiblePositions[permutationOfPositions[j]].z),
@@ -108,9 +114,15 @@ public class SegmentProducer : MonoBehaviour
             }
 
             xOffset += distanceObstacles;
+            wallObstacleIndex++;
+            if (wallObstacleIndex == 3)
+            {
+                wallObstacleIndex = 0;
+                Shuffle(rng, wallObstacles);
+            }
         }
 
-        segmentXPosition += 173f;
+        segmentXPosition += segmentLength;
         maxObstacles++;
         movingWallProbability += movingWallProbability == 40 ? 0 : 5;
     }

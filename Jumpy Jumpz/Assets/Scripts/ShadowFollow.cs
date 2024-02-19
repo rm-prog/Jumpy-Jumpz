@@ -9,11 +9,7 @@ public class ShadowFollow : MonoBehaviour
 
     private float offsetX = 5.0f;
 
-    private readonly float playerStartingHeight = 5.0f;
-
-    private readonly float maxScale = 4.0f;
-
-    private readonly float scaleMultiplier = 0.3f;
+    private readonly float scaleMultiplier = 0.5f;
     
 
     void FixedUpdate()
@@ -22,8 +18,6 @@ public class ShadowFollow : MonoBehaviour
         offsetX = player.position.y;
 
         transform.position = new Vector3(player.position.x + offsetX, positionY, player.position.z);
-
-        float scaleMultiplier = 0.5f;
 
         transform.localScale = new Vector3(scaleMultiplier * player.position.y, transform.localScale.y, scaleMultiplier * player.position.y);
 

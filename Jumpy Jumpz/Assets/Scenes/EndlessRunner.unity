@@ -1235,6 +1235,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: SegmentProducer
       objectReference: {fileID: 0}
+    - target: {fileID: 6276473056540877110, guid: 3ac5ba86a6cb4434db2e3ac8ae861bb0,
+        type: 3}
+      propertyPath: wallObstacle1
+      value: 
+      objectReference: {fileID: 6203612810336808628, guid: 78ace6459a5da734680aa892c7f3b6e8,
+        type: 3}
+    - target: {fileID: 6276473056540877110, guid: 3ac5ba86a6cb4434db2e3ac8ae861bb0,
+        type: 3}
+      propertyPath: wallObstacle2
+      value: 
+      objectReference: {fileID: 6203612810336808628, guid: 48403955d494032428f5569f03856e83,
+        type: 3}
+    - target: {fileID: 6276473056540877110, guid: 3ac5ba86a6cb4434db2e3ac8ae861bb0,
+        type: 3}
+      propertyPath: wallObstacle3
+      value: 
+      objectReference: {fileID: 6203612810336808628, guid: 7e22cc984d0434044846ee9eac3fb206,
+        type: 3}
     - target: {fileID: 6276473056540877111, guid: 3ac5ba86a6cb4434db2e3ac8ae861bb0,
         type: 3}
       propertyPath: m_RootOrder
