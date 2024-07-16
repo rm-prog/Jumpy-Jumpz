@@ -10,7 +10,7 @@ public class HighScore : MonoBehaviour
     {
         int score = Int32.Parse(ScoreText.GetComponent<TextMeshProUGUI>().text);
         int highestScore = PlayerPrefs.GetInt("HighScore", score);
-        PlayerPrefs.SetInt("HighScore", score);
+        PlayerPrefs.SetInt("HighScore", highestScore);
         if (score > highestScore)
         {
             PlayerPrefs.SetInt("HighScore", score);
