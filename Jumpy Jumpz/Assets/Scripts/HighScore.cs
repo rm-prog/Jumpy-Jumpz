@@ -18,4 +18,9 @@ public class HighScore : MonoBehaviour
         } 
         GetComponent<TextMeshProUGUI>().text = "High Score: " + highestScore;
     }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.Save();
+    }
 }
