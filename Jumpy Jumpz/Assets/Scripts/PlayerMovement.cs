@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         GetComponent<MeshFilter>().sharedMesh.UploadMeshData(false);
-        turnSettings = PlayerPrefs.GetString("turnSettings", "arrows");
+        turnSettings = PlayerPrefs.GetString("turnSettings", "tilt");
         PlayerPrefs.SetString("turnSettings", turnSettings);
     }
 
