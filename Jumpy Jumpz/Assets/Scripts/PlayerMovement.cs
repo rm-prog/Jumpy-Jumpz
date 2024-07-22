@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float linearSpeed = 30f; // 12f
     public readonly float verticalJumpSpeed = 7f; // 5f
-    private readonly float horizontalInputMultiply = 25.0f;
+    private float horizontalInputMultiply = 25.0f;
     private float velocityZ = 0f;
 
     private Boolean leftOrRight = false;
@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
         GetComponent<MeshFilter>().sharedMesh.UploadMeshData(false);
         turnSettings = PlayerPrefs.GetString("turnSettings", "tilt");
         PlayerPrefs.SetString("turnSettings", turnSettings);
+        float tiltMultiplier = PlayerPrefs.GetFloat("tiltMultiplier", 1.0f);
+        horizontalInputMultiply *= tiltMultiplier;
+        horizontalInputMultiply = Mathf.Round(horizontalInputMultiply * 100f) / 100f;
     }
 
     void Update()
