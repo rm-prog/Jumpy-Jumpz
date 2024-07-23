@@ -298,6 +298,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1592184141651269398, guid: da96fdb235ffc6d44baa8c20eb456c41,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592184141651269398, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1429361763}
@@ -306,6 +311,21 @@ PrefabInstance:
       propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1429361763}
+    - target: {fileID: 1592184141651269398, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592184141651269398, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592184141651269398, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2336128783115544174, guid: da96fdb235ffc6d44baa8c20eb456c41,
         type: 3}
       propertyPath: m_RootOrder
@@ -318,6 +338,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5554115141485555117, guid: da96fdb235ffc6d44baa8c20eb456c41,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5554115141485555117, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1429361763}
@@ -326,6 +351,21 @@ PrefabInstance:
       propertyPath: onHoldClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1429361763}
+    - target: {fileID: 5554115141485555117, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 5554115141485555117, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5554115141485555117, guid: da96fdb235ffc6d44baa8c20eb456c41,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6842377750192175267, guid: da96fdb235ffc6d44baa8c20eb456c41,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

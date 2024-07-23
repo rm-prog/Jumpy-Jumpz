@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public readonly float verticalJumpSpeed = 7f; // 5f
     private float horizontalInputMultiply = 25.0f;
     private float velocityZ = 0f;
+    private float arrowSensitivity;
 
     private Boolean leftOrRight = false;
 
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         float tiltMultiplier = PlayerPrefs.GetFloat("tiltMultiplier", 1.0f);
         horizontalInputMultiply *= tiltMultiplier;
         horizontalInputMultiply = Mathf.Round(horizontalInputMultiply * 100f) / 100f;
+        arrowSensitivity = PlayerPrefs.GetFloat("arrowSensitivity", 10.0f);
     }
 
     void Update()
@@ -60,8 +62,8 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(linearSpeed, rb.velocity.y, rb.velocity.z);
             if (!leftOrRight)
             {
-                if (velocityZ < 0) velocityZ += 5.0f;
-                else if (velocityZ > 0) velocityZ -= 5.0f;
+                if (velocityZ < 0) velocityZ += arrowSensitivity/2;
+                else if (velocityZ > 0) velocityZ -= arrowSensitivity/2;
                 rb.velocity = new Vector3(linearSpeed, rb.velocity.y, velocityZ);
             }
             leftOrRight = false;
@@ -71,14 +73,14 @@ public class PlayerMovement : MonoBehaviour
     public void Left()
     {
         leftOrRight = true;
-        velocityZ = 10.0f;
+        velocityZ = arrowSensitivity;
         rb.velocity = new Vector3(linearSpeed, rb.velocity.y, velocityZ);
     }
 
     public void Right()
     {
         leftOrRight = true;
-        velocityZ = -10.0f;
+        velocityZ = -arrowSensitivity;
         rb.velocity = new Vector3(linearSpeed, rb.velocity.y, velocityZ);
     }
 
